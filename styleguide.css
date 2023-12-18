@@ -1,0 +1,6 @@
+:root {
+    --active: 0px 2px 0px 0px rgba(248, 246, 255, 1), 2px -2px 0px 0px rgba(248, 246, 255, 1),
+      2px 0px 0px 0px rgba(248, 246, 255, 1), -2px -2px 0px 0px rgba(248, 246, 255, 1),
+      2px 2px 0px 0px rgba(248, 246, 255, 1), -2px 2px 0px 0px rgba(248, 246, 255, 1);
+  }
+  
