@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -11,17 +10,18 @@
       <div class="div">
         <div class="overlap-group">
           <img class="LOGO" src="img/LOGO-02-3.png" />
-          <div class="frame"><div class="text-wrapper">შესვლა</div></div>
+          <button type="button" class="frame">შესვლა</button>
         </div>
         <div class="text-wrapper-2">ბლოგი</div>
         <img class="blog" src="img/blog-1024x355-1.png" />
-        <div class="frame-2">
-          <div class="div-wrapper"><div class="text-wrapper-3">მარკეტი</div></div>
-          <div class="frame-3"><div class="text-wrapper-4">აპლიკაცია</div></div>
-          <div class="frame-4"><div class="text-wrapper-5">ხელოვნური ინტელექტი</div></div>
-          <div class="frame-5"><div class="text-wrapper-6">UI/UX</div></div>
-          <div class="frame-6"><div class="text-wrapper-7">კვლევა</div></div>
-          <div class="frame-7"><div class="text-wrapper-8">Figma</div></div>
+        <!-- <div id="blog-catogory_list"></div> -->
+        <div id="blog-catogory_list" >
+          <button id="category1">Category 1</button>
+          <button id="category2">Category 2</button>
+          <button id="category3">Category 3</button>
+          <button id="category4">Category 4</button>
+          <button id="category5">Category 5</button>
+          <button id="category6">Category 6</button>
         </div>
         <div class="frame-8">
           <div class="frame-9">
@@ -43,8 +43,9 @@
                 6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...
               </p>
               <div class="frame-16">
-                <div class="text-wrapper-12">სრულად ნახვა</div>
-                <img class="arrow" src="img/arrow.png" />
+                <button type="submit">
+                  <div class="text-wrapper-12">სრულად ნახვა<img class="arrow" src="img/arrow.png" /></div>                    
+                </button>
               </div>
             </div>
           </div>
@@ -70,8 +71,9 @@
                   6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...
                 </p>
                 <div class="frame-16">
-                    <div class="text-wrapper-12">სრულად ნახვა</div>
-                    <button><img class="arrow" src="img/arrow.png" /><button>
+                  <button type="submit">
+                    <div class="text-wrapper-12">სრულად ნახვა<img class="arrow" src="img/arrow.png" /></div> 
+                  </button>
                 </div>
               </div>
             </div>
@@ -98,8 +100,9 @@
                   6 თვის შემდეგ ყველის ბრმა დეგუსტაციის დროც დადგა. მაქსიმალური სიზუსტისთვის, ეს პროცესი...
                 </p>
                 <div class="frame-16">
-                  <div class="text-wrapper-12">სრულად ნახვა</div>
-                  <img class="arrow" src="img/arrow.png" />
+                  <button type="submit">
+                    <div class="text-wrapper-12">სრულად ნახვა<img class="arrow" src="img/arrow.png" /></div> 
+                  </button>
                 </div>
               </div>
             </div>
@@ -107,5 +110,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
