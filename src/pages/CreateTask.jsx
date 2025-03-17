@@ -47,6 +47,10 @@ function CreateTask() {
     }
   };
 
+  const filteredEmployees = taskData.department_id
+    ? employees.filter((e) => e.department.id === Number(taskData.department_id))
+    : employees;
+
   return (
     <div className="p-4 bg-white shadow-md rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Create Task</h2>
@@ -95,9 +99,9 @@ function CreateTask() {
 
         <select name="employee_id" onChange={handleChange} className="border p-2 w-full" required>
           <option value="">Select Employee</option>
-          {employees.map((e) => (
+          {filteredEmployees.map((e) => (
             <option key={e.id} value={e.id}>
-              {e.name}
+              {e.name} {e.surname}
             </option>
           ))}
         </select>
