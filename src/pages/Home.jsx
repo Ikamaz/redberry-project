@@ -68,10 +68,12 @@ const Home = () => {
                   <div className="flex justify-between text-sm mb-2">
                     <div className="flex items-center gap-2">
                       <img src={task.priority.icon} alt="priority-icon" className="w-5 h-5" />
-                      <span className="font-semibold text-red-500">{task.priority.name}</span>
+                      <span className="font-semibold text-xs">{task.priority.name}</span>
                     </div>
                     <span className="text-pink-600 bg-pink-100 px-3 py-1 rounded-lg text-xs font-bold">
-                      {task.department.name}
+                      {task.department.name.length > 6
+                        ? `${task.department.name.slice(0, 6)}..`
+                        : task.department.name}
                     </span>
                     <span className="text-gray-400 text-xs">{formatGeorgianDate(task.due_date)}</span>
                   </div>
